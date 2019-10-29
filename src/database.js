@@ -26,7 +26,6 @@ pool.getConnection((err, connection) => {
     }
 });
 
-//PROMISIFY POOL QUERY
 pool.query = promisify(pool.query);
 
 module.exports = pool;
